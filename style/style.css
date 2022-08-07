@@ -1,0 +1,222 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Helvetica, "Trebuchet MS", sans-serif;
+	background: #fff url(../img/fundo-loja1.jpeg) fixed center;
+	margin: 15px;
+	color: #fff;
+}
+
+
+
+#container{
+	margin: 0 auto;
+	min-width: 740px;
+	max-width: 1100px;
+	background-color: rgba(0, 2, 0, 0.7);
+	backdrop-filter: blur(5px);
+	border-radius: 2px;
+	box-shadow: 5px 5px 15px black;
+}
+
+/*formtatando menu top*/
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu ul{
+	margin-top: 0;
+	background: #000;
+	border-radius: 5px;
+	float: left;
+}
+
+#menu ul li{
+	float: left;
+}
+
+#menu ul a{
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #fff;
+	border-left: 1px solid #fff;
+	box-shadow: 5px 5px 8px black;
+
+}
+
+#menu ul .primeiro a{
+	border: none;
+}
+
+#menu ul a:hover{
+	color: #FFFF00;
+}
+
+.menu-logo{
+	width: 150px;
+	height: 43px;
+	padding-left: 15px;
+	background: url(../img/maxorginal.png) no-repeat left top;
+	float: left;
+	text-indent: -9000px;
+}
+
+#menu{
+	width: 720px;
+	height: 70px;
+	padding-top: 25px;
+	margin: 0 auto;
+}
+
+body.loja1 #nome-menu a#loja1,/*deixar marcado no menu*/
+body.conceito #nome-menu a#conceito,
+body.aldeota #nome-menu a#aldeota,
+body.repasse #nome-menu a#repasse,
+body.motos #nome-menu a#motos
+{
+	color: #FFFF00;
+	cursor: text;
+}
+
+/*fomatando conteudo*/
+a:link, a:visited{
+	color: black;
+}
+
+
+#conteudo{
+	margin-top: 10px;
+}
+
+.caixa-lateral{
+	width: 32%;
+	margin: 10px 0;/*superior e inferior*/
+	padding: 5px 0 5px 15px;
+	float: left;
+	
+}
+
+.caixa-central{
+	width: 32%;
+	margin: 10px 0 0 10px;/*superior e inferior*/
+	padding: 5px 0 5px 0;
+	float: left;
+}
+
+.caixa-lateral-direita{
+	width: 32%;
+	margin: 10px 0 0 10px;/*superior e inferior*/
+	padding: 5px 0 5px 0;
+	float: left;
+}
+
+.caixa-conteudo{
+	width: 350px;
+	height: 140px;
+	margin-bottom: 10px;
+	background: #dfdfdf;
+	border-radius: 4px;
+	box-shadow: 5px 5px 4px black;
+}
+
+.caixa-conteudo:hover{
+	background: #808080;
+}
+
+.caixa-conteudo a:hover{
+	color: white;
+}
+
+#titulo-disponivel{
+	width: 260px;
+}
+
+#pagina{
+	float: right;
+	display: block;
+	padding-right: 15px;
+	margin-top: -20px;
+}
+
+#pagina a{
+	text-decoration: none;
+	color: #fff;
+	padding: 0 10px;
+}
+
+#pagina a:hover{
+	background: #000;
+	border-radius: 4px;
+}
+
+#conteudo h3{
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 20px;
+}
+
+#conteudo h2,h4{
+	position: relative;
+	text-align: right;
+	font-size: 1.2em;
+	color: #fff;
+	background: #000;
+	z-index: 4;
+}
+
+
+#lista-veiculos li{
+	padding: 4px;
+	height: 62px;
+}
+
+#lista-veiculos li a img{
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+#lista-veiculos li a{
+	text-decoration: none;
+}
+
+#lista-veiculos li a h3{
+font-size: 0.8em;
+padding: 0;
+color: #3e7ab9;
+}
+
+#lista-veiculos li a p{
+font-size: 1em
+}
+
+/*#lista-veiculos li:hover{
+	background: #eee;
+	cursor: pointer;
+}*/
+
+/*rodape*/
+#endereco{
+	clear: both;
+	font-size: 0.8em;
+	margin-left: 15px;
+}
+
+#endereco h3{
+	color: yellow;
+	margin-left: 0;
+}
+
+#rodape{
+	clear: both;
+	padding: 10px;
+	text-align: right;
+	font-size: 0.7em;
+}
