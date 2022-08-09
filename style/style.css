@@ -133,6 +133,7 @@ a:link, a:visited{
 	font-weight: bold;
 }
 
+
 .caixa-conteudo-float h6{/*texto dentro do card*/
 	display: inline;
 	background-color: #000;
@@ -143,14 +144,21 @@ a:link, a:visited{
 
 .caixa-conteudo-float h5{ /*nome valor*/
 	display: inline;
-	background-color: #808080;
+	background-color: #000;
 	border-radius: 5px;
-	padding: 2px;
+	padding: 4px;
 	color: #fff;
+	float: left;
+	margin-top: 10px;
 }
 
 .caixa-conteudo-float .valor-caixa{
-	color: blue;
+	color: red;
+	background-color: yellow;
+	float: right;
+	margin-top: 10px;
+	padding: 4px;
+	border-radius: 7px;
 }
 
 
