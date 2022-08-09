@@ -120,12 +120,40 @@ a:link, a:visited{
 
 .caixa-conteudo{
 	width: 350px;
-	height: 140px;
+	height: 158px;
 	margin-bottom: 10px;
 	background: #dfdfdf;
 	border-radius: 4px;
 	box-shadow: 5px 5px 4px black;
 }
+
+.caixa-conteudo-float{
+	float: left;
+	width: 180px;
+	font-weight: bold;
+}
+
+.caixa-conteudo-float h6{/*texto dentro do card*/
+	display: inline;
+	background-color: #000;
+	border-radius: 5px;
+	padding: 2px;
+	color: #fff;
+}
+
+.caixa-conteudo-float h5{ /*nome valor*/
+	display: inline;
+	background-color: #808080;
+	border-radius: 5px;
+	padding: 2px;
+	color: #fff;
+}
+
+.caixa-conteudo-float .valor-caixa{
+	color: blue;
+}
+
+
 
 .caixa-conteudo:hover{
 	background: #808080;
@@ -180,7 +208,7 @@ a:link, a:visited{
 
 #lista-veiculos li a img{
 	float: left;
-	margin: 0 8px 0 0;
+	margin: 0px 8px 0 0;
 }
 
 #lista-veiculos li a{
