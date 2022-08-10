@@ -5,32 +5,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Veículos Disponíveis - Loja 1</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/style-galeria.css">
 	<link rel="stylesheet" type="text/css" href="style/modal.css">
-	<link rel = "icon" href = "img/maxorginal.png" type = "image/x-icon">
 </head>
 <body class="conceito">
-	<div id="container">
-
-		<div id="menu"> <!--inicio menu-->
+	<div id="menu"> <!--inicio menu teste-->
 			<h6 class="menu-logo">Max Loja 1</h6>
-			<ul id="nome-menu">
-				<li class="primeiro">
-					<a id="loja1" href="index.html">LOJA 1</a>
-				</li>
-				<li>
-					<a id="conceito" href="conceito.html">CONCEITO</a>
-				</li>
-				<li>
-					<a id="aldeota" href="aldeota.html">ALDEOTA</a>
-				</li>
-				<li>
-					<a id="repasse" href="repasse.html">REPASSE</a>
-				</li>
-				<li>
-					<a id="motos" href="motos.html">MOTOS</a>
-				</li>
-			</ul>
+			<div id="nome-menu">
+				<ul>
+					<li class="primeiro">
+						<a id="loja1" href="index.html">LOJA 1</a>
+					</li>
+					<li>
+						<a id="conceito" href="conceito.html">CONCEITO</a>
+					</li>
+					<li>
+						<a id="aldeota" href="aldeota.html">ALDEOTA</a>
+					</li>
+					<li>
+						<a id="repasse" href="repasse.html">REPASSE</a>
+					</li>
+					<li>
+						<a id="motos" href="motos.html">MOTOS</a>
+					</li>
+				</ul>
+			</div>	
 		</div>			<!--fim menu-->
+
+
+	<div id="container">
 
 		<div id="conteudo">
 			<h3 id="titulo-disponivel">Veículos Disponíveis</h3>
@@ -42,16 +45,19 @@
 					<ul id="lista-veiculos">
 								<li>
 									<a href="#abrirModal"><!--class de abrir o modal-->
-										<img src="img/carros/onix.jpeg" width="120">
-										<h2>Onix LTZ</h2>
-										<p>
-											Modelo: Onix LT 2020<br>
-											Cor: Branca <br>
-											Combustível: Flex<br>
-											KM: 35.400<br>
-											Motor:  1.0 Manual<br>
-											R$ 69.000,00
-										</p>
+										<img src="img/carros/onix.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
 									</a>
 								</li>
 					</ul>
@@ -60,31 +66,80 @@
 						  <a href="#fechar" title="Fechar" class="fechar">x</a>
 						  	<div>
 							  <h2>Onix LTZ</h2>
-							  				<div id="container-js"> <!--teste galeria-->
-											   <img src="img/carros/onix.jpeg" class="ativa">
-											   <img src="img/carros/onix2.jpeg">
-											   <img src="img/carros/onix3.jpeg">
-											   <img src="img/carros/onix4.jpeg">
-											   <img src="img/carros/onix5.jpeg">
-											   <img src="img/carros/onix6.jpeg">
-											   <img src="img/carros/onix7.jpeg">
-											   <img src="img/carros/onix8.jpeg">
-											</div> <!--teste galeria-->
+							  							<div class="container-slide"><!-- inicio galeria slider -->
+													  <div class="mySlides">
+													    <div class="numbertext">1 / 6</div>
+													    <img src="img/carros/onix.jpeg" style="width:100%">
+													  </div>
+
+													  <div class="mySlides">
+													    <div class="numbertext">2 / 6</div>
+													    <img src="img/carros/onix2.jpeg" style="width:100%">
+													  </div>
+
+													  <div class="mySlides">
+													    <div class="numbertext">3 / 6</div>
+													    <img src="img/carros/onix3.jpeg" style="width:100%">
+													  </div>
+													    
+													  <div class="mySlides">
+													    <div class="numbertext">4 / 6</div>
+													    <img src="img/carros/onix4.jpeg" style="width:100%">
+													  </div>
+
+													  <div class="mySlides">
+													    <div class="numbertext">5 / 6</div>
+													    <img src="img/carros/onix5.jpeg" style="width:100%">
+													  </div>
+													    
+													  <div class="mySlides">
+													    <div class="numbertext">6 / 6</div>
+													    <img src="img/carros/onix6.jpeg" style="width:100%">
+													  </div>
+													    
+													  <a class="prev" onclick="plusSlides(-1)">❮❮</a>
+													  <a class="next" onclick="plusSlides(1)">❯❯</a>
+
+													  <div class="caption-container">
+													    <p id="caption"></p>
+													  </div>
+
+													  <div class="row">
+													    <div class="column">
+													      <img class="demo cursor" src="img/carros/fox.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Rodas liga leve">
+													    </div>
+													    <div class="column">
+													      <img class="demo cursor" src="img/carros/onix2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Interno diferenciado">
+													    </div>
+													    <div class="column">
+													      <img class="demo cursor" src="img/carros/onix3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Motor 1.0">
+													    </div>
+													    <div class="column">
+													      <img class="demo cursor" src="img/carros/onix4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Lanternas fumê">
+													    </div>
+													    <div class="column">
+													      <img class="demo cursor" src="img/carros/onix5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Maior porta-malas da categoria">
+													    </div>    
+													    <div class="column">
+													      <img class="demo cursor" src="img/carros/onix6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Placa Mercosul">
+													    </div>
+													  </div>
+													</div>  <!-- fim galeria slider -->
 							  				<div class="text-modal">Modelo: Onix LT 2020<br>
-											Cor: Branca <br>
-											Combustível: Flex<br>
-											KM: 35.400<br>
-											Motor:  1.0 Manual<br>
-											Central multimídia<br>
-													Comandos no volante<br>
-													Faróis de neblina<br>
-													Pneus novos<br>
-													Reboque.<br>
-											<h1>R$ 69.000,00</h1>
+												Cor: Branca <br>
+												Combustível: Flex<br>
+												KM: 35.400<br>
+												Motor:  1.0 Manual<br>
+												Central multimídia<br>
+												Comandos no volante<br>
+												Faróis de neblina<br>
+												Pneus novos<br>
+												Reboque.<br>
+												<h1>R$69.000,00</h1>
 											</div>
 											<div style="clear: both;"></div>
 							</div>  
-					</div><!--MODAL-->
+					</div><!-- FIM MODAL-->
 					
 				</div>
 
@@ -92,16 +147,19 @@
 					<ul id="lista-veiculos">
 								<li>
 									<a href="#abrirModal2">
-										<img src="img/carros/fox.jpeg" width="120">
-										<h2>Fox Itrend</h2>
-										<p>
-											Modelo: Fox itrend 2013<br>
-											Cor: Azul <br>
-											Combustível: Flex<br>
-											KM: 122.479<br>
-											Motor: 1.0 Manual<br>
-											Valor da loja: R$ 29.000,00
-										</p>
+										<img src="img/carros/fox.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
 									</a>
 								</li>
 					</ul>
@@ -111,8 +169,8 @@
 						  	<div>
 							  <h2>Fox Itrend</h2>
 							  				<img src="img/carros/fox.jpeg" width="400">
-							  				<div class="text-modal">Modelo: Fox Itrend<br>
-													
+							  				<div class="text-modal">
+							  						Modelo: Fox Itrend<br>
 													Cor: Azul <br>
 													Combustível: Flex<br>
 													KM: 35.400<br>
@@ -127,7 +185,7 @@
 													Faróis de neblina<br>
 													Pneus novos<br>
 													Reboque.<br>
-													<h1>R$ 39.000,00</h1>
+													<h1>R$39.000,00</h1>
 											</div>
 											<div style="clear: both;"></div>
 							</div>  
@@ -139,23 +197,70 @@
 					<ul id="lista-veiculos">
 								<li>
 									<a href="">
-										<img src="img/carros/onix.jpeg" width="120">
-										<h2>Onix LTZ</h2>
-										<p>
-											Modelo: Onix LT 2020<br>
-											Cor: Branca <br>
-											Combustível: Flex<br>
-											KM: 35.400<br>
-											Motor:  1.0 Manual<br>
-											Valor da loja: R$ 69.000,00
-										</p>
+										<img src="img/carros/compass.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
 									</a>
 								</li>
 					</ul>
 					
 				</div>
 
-						
+				<div class="caixa-conteudo">
+					<ul id="lista-veiculos">
+								<li>
+									<a href="">
+										<img src="img/carros/compass.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
+									</a>
+								</li>
+					</ul>
+					
+				</div>
+
+				<div class="caixa-conteudo">
+					<ul id="lista-veiculos">
+								<li>
+									<a href="">
+										<img src="img/carros/fox.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
+									</a>
+								</li>
+					</ul>
+					
+				</div>
 
 			</div> <!--fim lateral esquerda-->
 
@@ -164,16 +269,19 @@
 					<ul id="lista-veiculos">
 								<li>
 									<a href="">
-										<img src="img/carros/compass.jpeg" width="120">
-										<h4>Compass Longitude</h4>
-										<p>
-											Modelo: Onix LT 2020<br>
-											Cor: Branca <br>
-											Combustível: Flex<br>
-											KM: 35.400<br>
-											Motor:  1.0 Manual<br>
-											Valor da loja: R$ 69.000,00
-										</p>
+										<img src="img/carros/onix.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
 									</a>
 								</li>
 					</ul>
@@ -184,16 +292,19 @@
 					<ul id="lista-veiculos">
 								<li>
 									<a href="">
-										<img src="img/carros/compass.jpeg" width="120">
-										<h4>Compass Longitude</h4>
-										<p>
-											Modelo: Onix LT 2020<br>
-											Cor: Branca <br>
-											Combustível: Flex<br>
-											KM: 35.400<br>
-											Motor:  1.0 Manual<br>
-											Valor da loja: R$ 69.000,00
-										</p>
+										<img src="img/carros/compass.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
 									</a>
 								</li>
 					</ul>
@@ -204,40 +315,42 @@
 					<ul id="lista-veiculos">
 								<li>
 									<a href="">
-										<img src="img/carros/compass.jpeg" width="120">
-										<h4>Compass Longitude</h4>
-										<p>
-											Modelo: Onix LT 2020<br>
-											Cor: Branca <br>
-											Combustível: Flex<br>
-											KM: 35.400<br>
-											Motor:  1.0 Manual<br>
-											Valor da loja: R$ 69.000,00
-										</p>
+										<img src="img/carros/fox.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
 									</a>
 								</li>
 					</ul>
 					
 				</div>
 
-				
-			</div> <!--fim caixa central-->
-
-			<div class="caixa-lateral-direita"> <!--caixa lateral direita-->
 				<div class="caixa-conteudo">
 					<ul id="lista-veiculos">
 								<li>
 									<a href="">
-										<img src="img/carros/onix.jpeg" width="120">
-										<h2>Onix LTZ</h2>
-										<p>
-											Modelo: Onix LT 2020<br>
-											Cor: Branca <br>
-											Combustível: Flex<br>
-											KM: 35.400<br>
-											Motor:  1.0 Manual<br>
-											Valor da loja: R$ 69.000,00
-										</p>
+										<img src="img/carros/onix.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
 									</a>
 								</li>
 					</ul>
@@ -248,16 +361,67 @@
 					<ul id="lista-veiculos">
 								<li>
 									<a href="">
-										<img src="img/carros/onix.jpeg" width="120">
-										<h2>Onix</h2>
-										<p>
-											Modelo: Onix LT 2020<br>
-											Cor: Branca <br>
-											Combustível: Flex<br>
-											KM: 35.400<br>
-											Motor:  1.0 Manual<br>
-											Valor da loja: R$ 69.000,00
-										</p>
+										<img src="img/carros/compass.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
+									</a>
+								</li>
+					</ul>
+					
+				</div>
+			</div> <!--fim caixa central-->
+
+			<div class="caixa-lateral-direita"> <!--caixa lateral direita-->
+				<div class="caixa-conteudo">
+					<ul id="lista-veiculos">
+								<li>
+									<a href="">
+										<img src="img/carros/fox.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
+									</a>
+								</li>
+					</ul>
+					
+				</div>
+
+					<div class="caixa-conteudo">
+					<ul id="lista-veiculos">
+								<li>
+									<a href="">
+										<img src="img/carros/onix.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
 									</a>
 								</li>
 					</ul>
@@ -268,29 +432,78 @@
 					<ul id="lista-veiculos">
 								<li>
 									<a href="">
-										<img src="img/carros/fox.jpeg" width="120">
-										<h2>Fox Itrend</h2>
-										<p>
-											Modelo: Fox itrend 2013<br>
-											Cor: Azul <br>
-											Combustível: Flex<br>
-											KM: 122.479<br>
-											Motor: 1.0 Manual<br>
-											Valor da loja: R$ 29.000,00
-										</p>
+										<img src="img/carros/fox.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
 									</a>
 								</li>
 					</ul>
 					
 					</div>
 
+					<div class="caixa-conteudo">
+					<ul id="lista-veiculos">
+								<li>
+									<a href="">
+										<img src="img/carros/compass.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
+									</a>
+								</li>
+					</ul>
 					
+					</div>
+
+					<div class="caixa-conteudo">
+					<ul id="lista-veiculos">
+								<li>
+									<a href="">
+										<img src="img/carros/onix.jpeg" width="150">
+										<div class="caixa-conteudo-float">
+											<h2>Onix LTZ</h2>
+											<p>
+												<h6>Modelo</h6> Onix LT 2020<br>
+												<h6>Cor</h6> Branca<br>
+												<h6>Combustível</h6> Flex<br>
+												<h6>KM</h6> 35.400<br>
+												<h6>Motor</h6>  1.0 Manual<br>
+												<h5>Valor</h5>
+												<div class="valor-caixa">R$69.000,00</div>
+											</p>
+										</div>
+									</a>
+								</li>
+					</ul>
+					
+					</div>
+
+
 			</div> <!--fim lateral direita-->
 
 			<div id="endereco">
-				<h3>Conceito</h3>
+				<h3>Loja 01</h3>
 				<div>
-				Av. Sargento Hermínio Sampaio, 1520 - Monte Castelo<br>
+				Av. Sargento Hermínio Sampaio, 3951 - Presidente Kennedy<br>
 				85 3025.5846 / 95846.6522 / 3255.5632
 				</div>
 			</div>

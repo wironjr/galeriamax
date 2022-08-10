@@ -1,25 +1,15 @@
 *{
-	margin: 0;
-	padding: 0;
+    margin:0;
+    padding:0;
+    border:0;
 }
+
 
 body{
 	font-family: Helvetica, "Trebuchet MS", sans-serif;
 	background: #fff url(../img/fundo-loja1.jpeg) fixed center;
-	margin: 15px;
+	background-size: cover;
 	color: #fff;
-}
-
-
-
-#container{
-	margin: 0 auto;
-	min-width: 740px;
-	max-width: 1100px;
-	background-color: rgba(0, 2, 0, 0.7);
-	backdrop-filter: blur(5px);
-	border-radius: 2px;
-	box-shadow: 5px 5px 15px black;
 }
 
 /*formtatando menu top*/
@@ -28,6 +18,7 @@ ul{
 	padding: 0;
 	list-style: none;
 }
+
 
 #menu ul{
 	margin-top: 0;
@@ -64,16 +55,45 @@ ul{
 	width: 150px;
 	height: 43px;
 	padding-left: 15px;
-	background: url(../img/maxorginal.png) no-repeat left top;
+	background: url(../img/maxorginal.png) no-repeat right top;
 	float: left;
+	margin-left: 9%;
 	text-indent: -9000px;
 }
 
 #menu{
-	width: 720px;
-	height: 70px;
+	position: fixed;
+	width: 100%;
+	height: 60px;
 	padding-top: 25px;
-	margin: 0 auto;
+	background-color: rgba(128, 128, 128, 0.9);
+	backdrop-filter: blur(5px);
+	box-shadow: 2px 2px 9px black;
+	z-index: 1;
+
+}
+
+#nome-menu{
+	position: absolute;
+	top: 25%;
+	left: 28%;
+	text-align: center;
+}
+
+
+
+#container{
+	position: absolute;
+	top: 17%;
+	left: 8%;
+	margin-bottom: 15px;
+	min-width: 740px;
+	max-width: 1100px;
+	background-color: rgba(0, 2, 0, 0.7);
+	backdrop-filter: blur(5px);
+	border-radius: 2px;
+	box-shadow: 5px 5px 15px black;
+	z-index: 0;
 }
 
 body.loja1 #nome-menu a#loja1,/*deixar marcado no menu*/
