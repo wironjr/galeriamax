@@ -22,7 +22,7 @@ ul{
 
 #menu ul{
 	margin-top: 0;
-	background: #000;
+	background: #fff;
 	border-radius: 5px;
 	float: left;
 }
@@ -37,7 +37,7 @@ ul{
 	padding: 0.5em 1.5em;
 	line-height: 2.1em;
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 	border-left: 1px solid #fff;
 	box-shadow: 5px 5px 8px black;
 
@@ -48,7 +48,7 @@ ul{
 }
 
 #menu ul a:hover{
-	color: #FFFF00;
+	color: #808080;
 }
 
 .menu-logo{
@@ -68,7 +68,7 @@ ul{
 	width: 100%;
 	height: 60px;
 	padding-top: 25px;
-	background-color: rgba(128, 128, 128, 0.9);
+	background-color: rgba(0, 0, 0, 0.9);
 	backdrop-filter: blur(5px);
 	box-shadow: 2px 2px 9px black;
 	z-index: 1;
@@ -102,7 +102,7 @@ body.aldeota #nome-menu a#aldeota,
 body.repasse #nome-menu a#repasse,
 body.motos #nome-menu a#motos
 {
-	color: #FFFF00;
+	color: gray;
 	cursor: text;
 }
 
@@ -150,9 +150,17 @@ a:link, a:visited{
 	width: 350px;
 	height: 158px;
 	margin-bottom: 10px;
-	background: #dfdfdf;
+	background: #fff;
 	border-radius: 4px;
 	box-shadow: 5px 5px 4px black;
+}
+
+.caixa-conteudo-float h6{/*texto dentro do card*/
+	font-size: 0.8em;
+	display: inline;
+	padding: 2px;
+	color: #5F5F5F;
+	text-transform: uppercase;
 }
 
 .caixa-conteudo-float{
@@ -162,41 +170,33 @@ a:link, a:visited{
 }
 
 
-.caixa-conteudo-float h6{/*texto dentro do card*/
-	display: inline;
-	background-color: #000;
-	border-radius: 5px;
-	padding: 2px;
-	color: #fff;
-}
 
 .caixa-conteudo-float h5{ /*nome valor*/
 	display: inline;
-	background-color: #000;
-	border-radius: 5px;
 	padding: 4px;
-	color: #fff;
+	color: #808080;
 	float: left;
 	margin-top: 10px;
+	text-transform: uppercase;
 }
 
 .caixa-conteudo-float .valor-caixa{
-	color: red;
-	background-color: yellow;
+	color: yellow;
+	background-color: #000;
 	float: right;
 	margin-top: 10px;
-	padding: 4px;
+	padding: 3px;
 	border-radius: 7px;
 }
 
 
 
 .caixa-conteudo:hover{
-	background: #808080;
+	background: #DDDFE0;
 }
 
 .caixa-conteudo a:hover{
-	color: white;
+	color: #000;
 }
 
 #titulo-disponivel{
@@ -228,11 +228,15 @@ a:link, a:visited{
 }
 
 #conteudo h2,h4{
+	display: inline;
 	position: relative;
+	left: 40px;
 	text-align: right;
 	font-size: 1.2em;
 	color: #fff;
 	background: #000;
+	border-radius: 6px;
+	padding: 0 6px;
 	z-index: 4;
 }
 
@@ -273,12 +277,16 @@ font-size: 1em
 /*rodape*/
 #endereco{
 	clear: both;
+	
+	clear: both;
 	font-size: 0.8em;
-	margin-left: 15px;
+
+	margin-left: 33px;
 }
 
 #endereco h3{
 	color: yellow;
+	
 	margin-left: 0;
 }
 
