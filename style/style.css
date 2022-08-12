@@ -7,7 +7,7 @@
 
 body{
 	font-family: Helvetica, "Trebuchet MS", sans-serif;
-	background: #fff url(../img/fundo-loja1.jpeg) fixed center;
+	background: #fff url(../img/fundo-loja1.jpeg) fixed center top;
 	background-size: cover;
 	color: #fff;
 }
@@ -52,16 +52,18 @@ ul{
 }
 
 .menu-logo{
+
 	width: 150px;
 	height: 43px;
 	padding-left: 15px;
 	background: url(../img/maxorginal.png) no-repeat right top;
 	float: left;
-	margin-left: 9%;
+	margin-left: 23%;
 	text-indent: -9000px;
 }
 
 #menu{
+
 	position: fixed;
 	width: 100%;
 	height: 60px;
@@ -74,9 +76,10 @@ ul{
 }
 
 #nome-menu{
+
 	position: absolute;
 	top: 25%;
-	left: 28%;
+	left: 35%;
 	text-align: center;
 }
 
@@ -84,11 +87,8 @@ ul{
 
 #container{
 	position: absolute;
-	top: 17%;
-	left: 8%;
 	margin-bottom: 15px;
-	min-width: 740px;
-	max-width: 1100px;
+	width: 100%;
 	background-color: rgba(0, 2, 0, 0.7);
 	backdrop-filter: blur(5px);
 	border-radius: 2px;
@@ -113,26 +113,34 @@ a:link, a:visited{
 
 
 #conteudo{
-	margin-top: 10px;
+	margin-top: 120px;
 }
 
 .caixa-lateral{
-	width: 32%;
-	margin: 10px 0;/*superior e inferior*/
+	
+	width: 23%;
+	margin: 10px 0 0 20px;/*superior e inferior*/
 	padding: 5px 0 5px 15px;
 	float: left;
 	
 }
 
 .caixa-central{
-	width: 32%;
+	width: 23%;
 	margin: 10px 0 0 10px;/*superior e inferior*/
 	padding: 5px 0 5px 0;
 	float: left;
 }
 
 .caixa-lateral-direita{
-	width: 32%;
+	width: 23%;
+	margin: 10px 0 0 10px;/*superior e inferior*/
+	padding: 5px 0 5px 0;
+	float: left;
+}
+
+.caixa-lateral-direita2{
+	width: 23%;
 	margin: 10px 0 0 10px;/*superior e inferior*/
 	padding: 5px 0 5px 0;
 	float: left;
@@ -257,6 +265,10 @@ font-size: 1em
 	background: #eee;
 	cursor: pointer;
 }*/
+
+#titulo-disponivel{
+	text-align: center;
+}
 
 /*rodape*/
 #endereco{
